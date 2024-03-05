@@ -1,0 +1,42 @@
+.header {
+}
+
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 25px 20px;
+
+  border: 1px solid $colorBlack;
+}
+
+.header__button {
+  color: rgb(34, 34, 34);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 15px 40px;
+
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: rgb(251, 75, 77);
+  }
+}
+
+.header__button_specific {
+  background-color: rgb(251, 75, 77);
+
+  transition: transform 0.2s linear;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.header__item_logotype {
+  display: flex;
+  column-gap: 30px;
+}
