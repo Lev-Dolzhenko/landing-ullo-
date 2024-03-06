@@ -94,7 +94,6 @@
 .hero__grid_right {
   display: grid;
   grid-template-rows: 0.4fr auto;
-
 }
 
 .hero__grid_text {
@@ -122,4 +121,18 @@
   border-left: unset;
 
   padding: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__grid_text {
+    border-left: 1px solid $colorBlack;
+  }
+
+  .hero__grid_souce-right {
+    border-left: 1px solid $colorBlack;
+  }
 }

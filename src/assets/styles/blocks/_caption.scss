@@ -7,7 +7,8 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 30px 60px;
+  padding: clamp(10px, 0.17rem + 2.27vw, 30px)
+    clamp(30px, 1.193rem + 3.41vw, 60px);
 
   border: 1px solid $colorBlack;
   border-top: unset;
@@ -19,4 +20,10 @@
 .title2 {
 }
 .title2_caption {
+}
+
+@media screen and (max-width: 720px) {
+  .caption__image {
+    display: none;
+  }
 }

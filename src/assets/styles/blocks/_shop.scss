@@ -23,15 +23,14 @@
 
   display: flex;
   flex-direction: column;
-  row-gap: 14px;
+  row-gap: clamp(0rem, -0.318rem + 1.59vw, 14px);
 
   width: 100%;
   text-align: center;
 }
 
 .shop__span {
-  color: $colorBlack;
-  font-size: 18px;
+  font-size: clamp(12px, 0.614rem + 0.68vw, 18px);
   font-weight: 400;
   line-height: 28.08px;
   letter-spacing: 0.5px;
@@ -40,9 +39,7 @@
 }
 
 .shop__title {
-  color: rgb(0, 0, 0);
-  font-family: Roboto;
-  font-size: 32px;
+  font-size: clamp(22px, 1.148rem + 1.14vw, 32px);
   font-weight: 400;
   line-height: 38.02px;
   letter-spacing: 0.5px;
@@ -53,16 +50,23 @@
 .shop__elem_image {
   position: absolute;
   left: 50%;
-  top: 35%;
+  top: 40%;
   transform: translateX(-50%);
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 100%;
+  width: 80%;
 
   img {
     width: unset;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .shop__row {
+    flex-direction: column;
+    row-gap: 30px;
   }
 }
