@@ -8,7 +8,7 @@
 
 .hero__grid_left {
   display: grid;
-  grid-template-rows: 1fr 0.2fr 1fr;
+  grid-template-rows: 1fr 0.16fr 1fr;
 }
 
 .hero__grid_name {
@@ -28,6 +28,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: unset;
+  height: unset;
 }
 
 .hero__grid_marquee {
@@ -73,6 +75,7 @@
     width: 64px;
   }
   div {
+    align-items: center;
     animation: marqueeHero 10s linear infinite;
   }
 }
@@ -90,7 +93,8 @@
 
 .hero__grid_right {
   display: grid;
-  grid-template-rows: 0.4fr 1fr;
+  grid-template-rows: 0.4fr auto;
+
 }
 
 .hero__grid_text {

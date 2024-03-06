@@ -1,0 +1,48 @@
+.marquee__grid_marquee {
+  display: grid;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: $colorWhite;
+
+  padding: 23px 0;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    color: $colorBlack;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25.92px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+
+    width: 100%;
+  }
+
+  img {
+    width: clamp(17px, 0.324rem + 3.15vw, 43px);
+  }
+
+  div {
+    display: flex;
+
+    width: 200%;
+  }
+}
+
+.marquee__grid_marquee {
+  border: 1px solid $colorBlack;
+
+  border-top: unset;
+
+  img {
+    width: 64px;
+  }
+  div {
+    animation: marqueeHero 10s linear infinite;
+  }
+}

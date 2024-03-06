@@ -17,6 +17,10 @@ a {
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
+
+  &_footer {
+    position: relative;
+  }
 }
 
 .title2 {
@@ -27,4 +31,10 @@ a {
   letter-spacing: 0.5px;
   text-align: center;
   text-transform: uppercase;
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
 }
