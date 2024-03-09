@@ -1,2 +1,3 @@
 import '../styles/main.scss'
-import animation from './animation.js'
+import mobileMenu from './mobileMenu.js'
+import animations from './animations.js'

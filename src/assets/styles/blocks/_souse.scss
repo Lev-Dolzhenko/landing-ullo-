@@ -1,9 +1,17 @@
 .souse__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 
-    border: 1px solid $colorBlack;
-    border-top: unset;
+  border: 1px solid $colorBlack;
+  border-top: unset;
+}
+
+.overlay-souse-main {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-700px);
 }

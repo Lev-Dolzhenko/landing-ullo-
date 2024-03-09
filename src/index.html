@@ -20,7 +20,7 @@
           <div class="header__item">
             <button class="header__button">shop</button>
           </div>
-          <div class="header__item_logotype">
+          <div class="header__item_logotype header__item">
             <img
               id="redCircleLogotype"
               src="/assets/images/header/logotype/redCirlceLogotype.svg"
@@ -54,8 +54,10 @@
               id="redCircleLogotype"
               src="/assets/images/header/logotype/redCirlceLogotype.svg"
               alt="redCircleLogotype"
+              class="redCircleLogotype"
             />
             <img
+              class="mainLogotype"
               src="/assets/images/header/logotype/logotype.svg"
               alt="logotype"
             />
@@ -74,9 +76,7 @@
         <nav class="nav__mobile container">
           <ul>
             <li class="header__item header__item_nav">
-              <button class="header__button header__button_nav">
-                Go back
-              </button>
+              <button class="header__button header__button_nav">Go back</button>
             </li>
             <li class="header__item header__item_nav">
               <button class="header__button header__button_nav">story</button>
@@ -88,12 +88,12 @@
               <button class="header__button header__button_nav">contact</button>
             </li>
             <li class="header__item header__item_nav">
-              <button class="header__button header__button_nav">wholesale</button>
+              <button class="header__button header__button_nav">
+                wholesale
+              </button>
             </li>
             <li class="header__item header__item_nav">
-              <button class="header__button header__button_nav">
-                clone
-              </button>
+              <button class="header__button header__button_nav">clone</button>
             </li>
           </ul>
         </nav>
@@ -137,11 +137,14 @@
                 </div>
               </div>
               <div class="hero__grid_souce">
-                <img
-                  class="hero__image_souce"
-                  src="/assets/images/main/hero/imageLeft.jpeg"
-                  alt="name"
-                />
+                <div class="image__wrapper">
+                  <div class="overlay-souce"></div>
+                  <img
+                    class="hero__image_souce"
+                    src="/assets/images/main/hero/imageLeft.jpeg"
+                    alt="name"
+                  />
+                </div>
               </div>
             </div>
             <div class="hero__grid_right">
@@ -153,10 +156,13 @@
                 </div>
               </div>
               <div class="hero__grid_souce-right">
-                <img
-                  src="/assets/images/main/hero/imageRight.jpeg"
-                  alt="imageRight"
-                />
+                <div class="image__wrapper">
+                  <div class="overlay-souce-right"></div>
+                  <img
+                    src="/assets/images/main/hero/imageRight.jpeg"
+                    alt="imageRight"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -265,10 +271,13 @@
       <section class="souse 1none">
         <div class="container">
           <div class="souse__wrapper">
-            <img
-              src="/assets/images/main/souse/souseImage.jpeg"
-              alt="souseImage"
-            />
+            <div class="image__wrapper">
+              <div class="overlay-souse-main"></div>
+              <img
+                src="/assets/images/main/souse/souseImage.jpeg"
+                alt="souseImage"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -284,10 +293,13 @@
                 </div>
               </div>
               <div class="story__grid_image">
-                <img
-                  src="/assets/images/main/story/leftImage.jpeg"
-                  alt="leftImage"
-                />
+                <div class="image__wrapper">
+                  <div class="overlay-story"></div>
+                  <img
+                    src="/assets/images/main/story/leftImage.jpeg"
+                    alt="leftImage"
+                  />
+                </div>
               </div>
             </div>
             <div class="story__grid_right">
@@ -360,9 +372,9 @@
           </div>
         </div>
       </section>
-      <section class="marquee 1none">
+      <section class="marquee marqueeTwo 1none">
         <div class="container">
-          <div class="marquee__grid_marquee">
+          <div class="marquee__grid_marquee marquee__grid_marqueeTwo">
             <div>
               <span> put some fire in your belly </span>
               <span>
@@ -422,12 +434,12 @@
             alt="footerRT"
           />
           <img
-            class="footer__elem footer__elem-text"
+            class="footer__elem footer__elem-text footer__elem-text-large"
             src="/assets/images/footer/footerLogotype.png"
             alt="footerLogotype"
           />
           <img
-            class="footer__elem footer__elem-text"
+            class="footer__elem footer__elem-text footer__elem-text-small"
             src="/assets/images/footer/footerText.png"
             alt="footerText"
           />
