@@ -29,6 +29,7 @@ module.exports = {
       },
     ],
   },
+  base: "/landing-ullo-",
   plugins: [
     new HtmlWebpackPlugin({
       title: "Ullo",
