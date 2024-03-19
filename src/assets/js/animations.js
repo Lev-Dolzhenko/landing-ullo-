@@ -252,8 +252,8 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: ".footer__wrapper",
       scrub: true,
-      start: "top center",
-      end: "center center",
+      start: "top bottom",
+      end: "center bottom",
     },
   }
 );
@@ -266,8 +266,8 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: ".footer__wrapper",
       scrub: true,
-      start: "20% center",
-      end: "center center",
+      start: "20% bottom",
+      end: "center bottom",
     },
   }
 );
